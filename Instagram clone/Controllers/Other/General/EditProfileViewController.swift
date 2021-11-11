@@ -45,7 +45,7 @@ final class EditProfileViewController: UIViewController, UITableViewDataSource {
         let section1Labels = ["Name", "Username", "Bio"]
         var section1 = [EditProfileFormModel]()
         for label in section1Labels{
-            let model = EditProfileFormModel(label: label, placeholder: "Enter\(label)...", value: nil)
+            let model = EditProfileFormModel(label: label, placeholder: "Enter \(label)...", value: nil)
             section1.append(model)
         }
         models.append(section1)
@@ -56,7 +56,7 @@ final class EditProfileViewController: UIViewController, UITableViewDataSource {
         let section2Labels = ["Email", "Phone", "Gender"]
         var section2 = [EditProfileFormModel]()
         for label in section2Labels{
-            let model = EditProfileFormModel(label: label, placeholder: "Enter\(label)...", value: nil)
+            let model = EditProfileFormModel(label: label, placeholder: "Enter \(label)...", value: nil)
             section2.append(model)
         }
         models.append(section2)
